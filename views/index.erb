@@ -1,8 +1,46 @@
-<!DOCTYPE html>
-<title>Bowling Alley<title>
-    <body>
-        <h1>Buster's Best Bowling Alley</h1>
-        <h2>Bet You Can't Bowl A Strike Every Time</h2>
-        <p>97 Bowling Alley Lane, Boulder CO </p>
-    </body>
-</html>
+
+    <h1>Buster's Best Bowling Alley</h1>
+     <h2>Bet You Can't Bowl A Strike Every Time</h2>
+     <p>97 Bowling Alley Lane, Boulder CO</p>
+     <h1><%= "I love " + "Ruby!!"%></h1>
+     
+     <%= 1 + 1 %>
+
+    <% if 1 == 2 %>
+        <p>1 equals 2.</p>
+    <% else %>
+        <p>1 does not equal 2.</p>
+    <% end %> 
+
+    <% if logged_in? %>
+        <a href="/logout">Click here to Log Out</a>
+    <% else %>
+        <a href="/login">Click here to Log In</a>
+    <% end %>
+
+    <ul>
+        <% squares = [1, 4, 9, 16] %>
+        <% squares.each do |square| %>
+            <li><%= square %></li>
+        <% end %>
+    </ul>
+
+    <ul>
+        <li>1</i>
+        <li>4</i>
+        <li>9</i>
+        <li>16</i>
+    </ul>
+
+    <% wall_post = ["First post!", "Second post", "Hello, it's your mother. Why don't you ever call me?"] %>
+    <ul>
+        <% wall_post.each do |post| %>
+            <li><%= post %></li>
+        <% end %>
+    </ul>
+
+    <ul>
+        <li>First Post!</li>
+        <li>Second Post!</li>
+        <li>Hello, it's your mother. Why don't you ever call me?</li>
+    </ul>
